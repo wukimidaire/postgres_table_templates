@@ -1,5 +1,16 @@
 # Step-by-Step Plan to Create a New PostgreSQL Instance on Google Cloud
 
+## Table of Contents
+1. [Set Up Google Cloud Project](#step-1-set-up-google-cloud-project)
+2. [Enable Cloud SQL API](#step-2-enable-cloud-sql-api)
+3. [Create a PostgreSQL Instance](#step-3-create-a-postgresql-instance)
+4. [Configure Network and Security](#step-4-configure-network-and-security)
+5. [Create a Database](#step-5-create-a-database)
+6. [Connect to Your Instance](#step-6-connect-to-your-instance)
+7. [Table Creation](#step-7-table-creation)
+8. [Summary](#summary)
+9. [Database Schema](#database-schema)
+
 ## Step 1: Set Up Google Cloud Project
 
 ### Create a Google Cloud Project:
