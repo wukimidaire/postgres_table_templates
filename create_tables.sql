@@ -474,6 +474,9 @@ CREATE TABLE "public"."pli_skills" (
 );
 
 -- website_content Table Definition
+-- This script only contains the table creation statements and does not fully represent the table in the database. Do not use it as a backup.
+
+-- Table Definition
 CREATE TABLE "public"."website_content" (
     "company_id" int8 NOT NULL,
     "url" varchar NOT NULL,
@@ -493,4 +496,6 @@ CREATE TABLE "public"."website_content" (
     "open_positions" _text,
     "ideal_customer_profile" _text,
     "case_studies" _text,
-    "contact_info" _
+    "contact_info" _text,
+    PRIMARY KEY ("company_id")
+);
