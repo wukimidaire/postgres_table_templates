@@ -499,3 +499,77 @@ CREATE TABLE "public"."website_content" (
     "contact_info" _text,
     PRIMARY KEY ("company_id")
 );
+
+
+
+
+
+-- This script only contains the table creation statements and does not fully represent the table in the database. Do not use it as a backup.
+
+-- Table Definition
+CREATE TABLE "outbound_activities"."ce_campaign" (
+    "campaign_id" int8 NOT NULL,
+    "user_id" int8,
+    "created_at" timestamptz NOT NULL,
+    "updated_at" timestamptz NOT NULL,
+    "status" text NOT NULL,
+    "name" text,
+    "track_settings" _text,
+    "scheduler_cron_value" jsonb,
+    "min_time_btwn_emails" int4,
+    "max_leads_per_day" int4,
+    "stop_lead_settings" text,
+    "enable_ai_esp_matching" bool,
+    "send_as_plain_text" bool,
+    "follow_up_percentage" int4,
+    "unsubscribe_text" text,
+    "parent_campaign_id" int8,
+    "client_id" int8,
+    "psg_last_update_timestamp" timestamp,
+    PRIMARY KEY ("campaign_id")
+);
+
+-- This script only contains the table creation statements and does not fully represent the table in the database. Do not use it as a backup.
+
+-- Table Definition
+CREATE TABLE "outbound_activities"."ce_campaign_activity" (
+    "id" int8 NOT NULL,
+    "campaign_lead_map_id" int8,
+    "status" text,
+    "category" text,
+    "is_interested" bool,
+    "created_at" timestamptz NOT NULL,
+    "first_name" text,
+    "last_name" text,
+    "email" text,
+    "phone_number" text,
+    "company_name" text,
+    "website" text,
+    "location" text,
+    "custom_fields" jsonb,
+    "linkedin_profile" text,
+    "company_url" text,
+    "is_unsubscribed" bool,
+    "unsubscribed_client_id_map" jsonb,
+    "last_email_sequence_sent" int4,
+    "open_count" int4,
+    "click_count" int4,
+    "reply_count" int4,
+    "psg_last_update_timestmap" timestamp,
+    "campaign_id" int4,
+    "hb_lifecyclestage_check_timestamp" timestamp,
+    PRIMARY KEY ("id")
+);
+
+-- This script only contains the table creation statements and does not fully represent the table in the database. Do not use it as a backup.
+
+-- Table Definition
+CREATE TABLE "outbound_activities"."hubspot" (
+    "hubspot_company_id" int8 NOT NULL,
+    "campaign_id" int4,
+    "lifecyclestage" text,
+    "hs_num_open_deals" int4,
+    "last_engagement_date" timestamp,
+    "last_time_hb_check_timestamp" timestamp,
+    PRIMARY KEY ("hubspot_company_id")
+);
