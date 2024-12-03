@@ -620,3 +620,65 @@ This plan should help you set up and manage a PostgreSQL instance on Google Clou
 - **ideal_customer_profile**: _text - The ideal customer profile described on the website.
 - **case_studies**: _text - Case studies found on the website.
 - **contact_info**: _text - Contact information found on the website.
+
+
+## Table: ce_campaign
+**Purpose**: Stores campaign configuration and settings for outbound marketing activities.
+
+- **campaign_id**: int8 (Primary Key) - Unique identifier for the campaign.
+- **user_id**: int8 - ID of the user who created the campaign.
+- **created_at**: timestamptz - Timestamp when campaign was created.
+- **updated_at**: timestamptz - Timestamp of last update.
+- **status**: text - Current status of the campaign.
+- **name**: text - Campaign name.
+- **track_settings**: _text - Array of tracking configuration.
+- **scheduler_cron_value**: jsonb - Scheduling settings in cron format.
+- **min_time_btwn_emails**: int4 - Minimum time between email sends.
+- **max_leads_per_day**: int4 - Daily lead processing limit.
+- **stop_lead_settings**: text - Configuration for stopping lead processing.
+- **enable_ai_esp_matching**: bool - AI ESP matching feature flag.
+- **send_as_plain_text**: bool - Email format setting.
+- **follow_up_percentage**: int4 - Follow-up rate configuration.
+- **unsubscribe_text**: text - Custom unsubscribe message.
+- **parent_campaign_id**: int8 - ID of parent campaign if applicable.
+- **client_id**: int8 - Associated client identifier.
+- **psg_last_update_timestamp**: timestamp - Last PSG update time.
+
+##Table: ce_campaign_activity
+**Purpose**: Tracks campaign activities and lead interactions.
+
+- **id**: int8 (Primary Key) - Unique activity identifier.
+- **campaign_lead_map_id**: int8 - Campaign-lead mapping reference.
+- **status**: text - Activity status.
+- **category**: text - Activity category.
+- **is_interested**: bool - Lead interest indicator.
+- **created_at**: timestamptz - Activity creation timestamp.
+- **first_name**: text - Lead's first name.
+- **last_name**: text - Lead's last name.
+- **email**: text - Lead's email address.
+- **phone_number**: text - Lead's phone number.
+- **company_name**: text - Lead's company.
+- **website**: text - Company website.
+- **location**: text - Lead's location.
+- **custom_fields**: jsonb - Additional custom data.
+- **linkedin_profile**: text - LinkedIn profile URL.
+- **company_url**: text - Company website URL.
+- **is_unsubscribed**: bool - Unsubscription status.
+- **unsubscribed_client_id_map**: jsonb - Unsubscribe tracking.
+- **last_email_sequence_sent**: int4 - Last email sequence number.
+- **open_count**: int4 - Email open count.
+- **click_count**: int4 - Email click count.
+- **reply_count**: int4 - Email reply count.
+- **psg_last_update_timestmap**: timestamp - Last PSG update.
+- **campaign_id**: int4 - Associated campaign ID.
+- **hb_lifecyclestage_check_timestamp**: timestamp - HubSpot lifecycle check time.
+
+##Table: hubspot
+**Purpose: Stores HubSpot integration data and company information.
+
+- **hubspot_company_id**: int8 (Primary Key) - HubSpot company identifier.
+- **campaign_id**: int4 - Associated campaign ID.
+- **lifecyclestage**: text - Company's lifecycle stage.
+- **hs_num_open_deals**: int4 - Number of open deals.
+- **last_engagement_date**: timestamp - Last engagement timestamp.
+l- **ast_time_hb_check_timestamp**: timestamp - Last HubSpot check time.
