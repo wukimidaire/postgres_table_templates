@@ -1,6 +1,4 @@
-## Overivew
-
-**Applications**:
+## Applications
    - **Data Ingestion**: Digital footprint data storage
    - **CRM Data Enrichment**
    - **Agentic Boilerplate**: Provides a solid structured database foundation
