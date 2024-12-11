@@ -1,10 +1,15 @@
 ## Applications
 
    - **Data Ingestion**: Digital footprint data storage
+     
    - **CRM Data Enrichment**
+     
    - **Agentic Boilerplate**: Provides a solid structured database foundation
+     
    - **Predictive Analytics**: Clustering customer data & Predictive GTM Strategies for Marketing and Sales
- - **Impact**: Client-agnostic template system for rapid deployment. Contribution to open-source community
+     
+   - **Impact**: Client-agnostic template system for rapid deployment. Contribution to open-source community
+
 
 
 
