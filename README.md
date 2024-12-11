@@ -1,4 +1,13 @@
-# Step-by-Step Plan to Create a New PostgreSQL Instance on Google Cloud
+## Overivew
+
+**Applications**:
+   - **Data Ingestion**: Digital footprint data storage
+   - **CRM Data Enrichment**
+   - **Agentic Boilerplate**: Provides a solid structured database foundation
+   - **Predictive Analytics**: Clustering customer data & Predictive GTM Strategies for Marketing and Sales
+ - **Impact**: Client-agnostic template system for rapid deployment. Contribution to open-source community
+
+## Step-by-Step Plan to Create a New PostgreSQL Instance on Google Cloud
 
 ## Table of Contents
 1. [Set Up Google Cloud Project](#step-1-set-up-google-cloud-project)
