@@ -90,6 +90,13 @@ Restricting access to your PostgreSQL instance by specifying a list of allowed I
 - **n8n (4.182.88.118)**
 - **n8n (20.79.232.36)**
 - **n8n (4.182.212.136)**
+- **n8n (72.144.69.38)**
+- **n8n (72.144.83.147)**
+- **n8n (72.144.128.145)**
+- **n8n (98.67.244.108)**
+- **n8n (98.67.233.91)**
+
+  
 
 ### Add Your Personal IP Address:
 1. To ensure you have access to the database instance, add your own personal IP address to the list.
