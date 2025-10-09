@@ -95,6 +95,16 @@ Restricting access to your PostgreSQL instance by specifying a list of allowed I
 - **n8n (72.144.128.145)**
 - **n8n (98.67.244.108)**
 - **n8n (98.67.233.91)**
+- **Airbyte (34.106.196.165)**
+- **Airbyte (34.106.225.141)**
+- **Airbyte (34.106.115.240)**
+- **Airbyte (34.106.229.69)**
+- **Airbyte (34.106.115.240)**
+- **Airbyte (34.106.218.58)**
+- **Airbyte (34.106.127.139)**
+- **Airbyte (34.106.109.131)**
+- **Airbyte (34.106.60.246)**
+
 
   
 
